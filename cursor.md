@@ -98,14 +98,13 @@ Then:
 ## Current progress
 
 - **Current milestone:** 0 — Repository and Go Foundations
-- **Current step:** 0.4 — Minimal validation
-- **Done:** 0.1 healthz, 0.2 Makefile `make run`, 0.3 `POST /v1/events`
+- **Current step:** 0.5 — Log accepted events
+- **Done:** 0.1 healthz, 0.2 Makefile, 0.3 POST /v1/events, 0.4 validation
 - **Definition of done for Milestone 0:** `make test`, `make run`, `curl localhost:<port>/healthz`
 - We will reach that over several small typing steps, not in one dump.
 
-## Next intended steps (after 0.4 works)
+## Next intended steps (after 0.5 works)
 
-- 0.5 Log accepted events
 - 0.6 Unit tests
 - 0.7 `make test`
 - 0.8 Docker image (listed in DESIGN M0; after tests)

@@ -25,6 +25,22 @@ type acceptResponse struct {
 	Accepted bool   `json:"accepted"`
 }
 
+func validateEvent(event Event) error {
+	if event.TraceID == "" {
+		return fmt.Errorf("trace_id is required")
+	}
+	if event.EventType == "" {
+		return fmt.Errorf("event_type is required")
+	}
+	if event.EventTime.IsZero() {
+		return fmt.Errorf("event_time is required")
+	}
+	if len(event.Payload) == 0 {
+		return fmt.Errorf("payload is required")
+	}
+	return nil
+}
+
 func healthzHandler(w http.ResponseWriter, r *http.Request) {
 	if r.Method != http.MethodGet {
 		http.Error(w, "method not allowed", http.StatusMethodNotAllowed)
@@ -44,6 +60,11 @@ func eventsHandler(w http.ResponseWriter, r *http.Request) {
 	var event Event
 	if err := json.NewDecoder(r.Body).Decode(&event); err != nil {
 		http.Error(w, "invalid JSON", http.StatusBadRequest)
+		return
+	}
+
+	if err := validateEvent(event); err != nil {
+		http.Error(w, err.Error(), http.StatusBadRequest)
 		return
 	}
 
