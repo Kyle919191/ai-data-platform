@@ -89,21 +89,27 @@ Then:
 - Do not push `paradeDB/` or the parent `platform/` folder.
 - `temp.txt` is gitignored (typing worksheet only).
 
+## Progress checklist
+
+- Kyle wants a full-project checklist he can scan: `docs/progress.md`.
+- Update that file when a step is verified. Keep “You are here” accurate.
+- Do not mark a step done until it has been run, not only typed.
+
 ## Current progress
 
 - **Current milestone:** 0 — Repository and Go Foundations
-- **Current step:** 0.2 — Makefile (`make run`)
-- **Done:** 0.1 — Go module + `GET /healthz` (`go.mod`, `cmd/ingestion-gateway/main.go`)
+- **Current step:** 0.3 — Event struct + `POST /v1/events`
+- **Done:** 0.1 healthz, 0.2 Makefile `make run`
 - **Definition of done for Milestone 0:** `make test`, `make run`, `curl localhost:<port>/healthz`
 - We will reach that over several small typing steps, not in one dump.
 
-## Next intended steps (after 0.2 works)
+## Next intended steps (after 0.3 works)
 
-- 0.3 Event struct + `POST /v1/events`
 - 0.4 Minimal validation
 - 0.5 Log accepted events
 - 0.6 Unit tests
 - 0.7 `make test`
+- 0.8 Docker image (listed in DESIGN M0; after tests)
 
 ## Go environment
 
