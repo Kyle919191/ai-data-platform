@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"log"
 	"net/http"
 	"os"
 	"time"
@@ -71,6 +72,9 @@ func eventsHandler(w http.ResponseWriter, r *http.Request) {
 	if event.EventID == "" {
 		event.EventID = fmt.Sprintf("evt_%d", time.Now().UnixNano())
 	}
+
+	log.Printf("accepted event_id=%s trace_id=%s event_type=%s",
+		event.EventID, event.TraceID, event.EventType)
 
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
