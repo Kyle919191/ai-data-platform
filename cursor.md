@@ -98,13 +98,13 @@ Then:
 ## Current progress
 
 - **Current milestone:** 1 — AI Event Ingestion
-- **Current step:** 1.2 — Generator loop (10 events, still HTTP only)
-- **Done:** Milestone 0; 1.1 one POST from event-generator
+- **Current step:** 1.3 — Kafka via Docker Compose (do not publish from the gateway yet)
+- **Done:** Milestone 0; 1.1–1.2 HTTP generator
 - **Definition of done for Milestone 1:** 100+ events/sec generated and consumed reliably (Kafka comes later in this milestone)
 
-## Next intended steps (after 1.2 works)
+## Next intended steps (after 1.3 works)
 
-- 1.3 Kafka via Docker Compose
+- 1.4 Gateway publishes to `ai.events.raw`
 
 ## Go environment
 

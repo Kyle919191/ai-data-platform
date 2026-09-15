@@ -2,7 +2,7 @@
 
 Living checklist for the AI Data Platform. Check a box when that step is verified (run + expected result), not when the file is merely typed.
 
-**You are here:** Milestone 1, step **1.2** — Generator loop / rate
+**You are here:** Milestone 1, step **1.3** — Kafka locally (Docker Compose)
 
 Repo: https://github.com/Kyle919191/ai-data-platform
 
@@ -40,7 +40,7 @@ How to read this:
 **Definition of done:** 100+ events/sec generated and consumed reliably.
 
 - [x] **1.1** Event generator: POST one event to the gateway (no Kafka)
-- [ ] **1.2** Generator loop / rate (still HTTP only)
+- [x] **1.2** Generator loop / rate (still HTTP only)
 - [ ] **1.3** Kafka locally (Docker Compose)
 - [ ] **1.4** Gateway publishes to `ai.events.raw` (partition key: `trace_id`)
 - [ ] **1.5** Consume path: topic, partition, offset
