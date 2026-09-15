@@ -2,7 +2,7 @@
 
 Living checklist for the AI Data Platform. Check a box when that step is verified (run + expected result), not when the file is merely typed.
 
-**You are here:** Milestone 0, step **0.7** — Makefile `make test`
+**You are here:** Milestone 0, step **0.8** — Docker image for the gateway
 
 Repo: https://github.com/Kyle919191/ai-data-platform
 
@@ -27,7 +27,7 @@ How to read this:
 - [x] **0.4** Minimal validation (reject bad / incomplete events)
 - [x] **0.5** Log accepted events
 - [x] **0.6** Unit tests for handlers / validation
-- [ ] **0.7** Makefile: `make test`
+- [x] **0.7** Makefile: `make test`
 - [ ] **0.8** Docker image for the gateway (design lists this in M0; after tests)
 
 ---
