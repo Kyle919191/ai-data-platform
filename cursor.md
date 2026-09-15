@@ -98,15 +98,14 @@ Then:
 ## Current progress
 
 - **Current milestone:** 0 — Repository and Go Foundations
-- **Current step:** 0.8 — Docker image for the gateway
-- **Done:** 0.1–0.7 (`make test` and `make run` both work)
+- **Current step:** 0.9 — Milestone 0 learning note
+- **Done:** 0.1–0.8 (including Docker image `ingestion-gateway:0.8`)
 - **Definition of done for Milestone 0:** `make test`, `make run`, `curl localhost:<port>/healthz`
 - We will reach that over several small typing steps, not in one dump.
 
-## Next intended steps (after 0.8 works)
+## Next intended steps (after 0.9 works)
 
-- Milestone 0 learning note (`docs/learning/`)
-- Then Milestone 1 (event generator; still no Kafka at first)
+- Milestone 1: event generator → HTTP gateway (still no Kafka at first)
 
 ## Go environment
 
