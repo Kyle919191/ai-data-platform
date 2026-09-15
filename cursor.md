@@ -98,14 +98,13 @@ Then:
 ## Current progress
 
 - **Current milestone:** 0 — Repository and Go Foundations
-- **Current step:** 0.6 — Unit tests
-- **Done:** 0.1–0.5 (healthz, Makefile, POST events, validation, accepted log)
+- **Current step:** 0.7 — Makefile `make test`
+- **Done:** 0.1–0.6
 - **Definition of done for Milestone 0:** `make test`, `make run`, `curl localhost:<port>/healthz`
 - We will reach that over several small typing steps, not in one dump.
 
-## Next intended steps (after 0.6 works)
+## Next intended steps (after 0.7 works)
 
-- 0.7 `make test`
 - 0.8 Docker image (listed in DESIGN M0; after tests)
 
 ## Go environment
