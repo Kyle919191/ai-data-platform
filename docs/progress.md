@@ -2,7 +2,7 @@
 
 Living checklist for the AI Data Platform. Check a box when that step is verified (run + expected result), not when the file is merely typed.
 
-**You are here:** Milestone 0 wrap-up — learning note `docs/learning/00-go-foundations.md`
+**You are here:** Milestone 1, step **1.1** — Event generator sends one POST
 
 Repo: https://github.com/Kyle919191/ai-data-platform
 
@@ -29,7 +29,7 @@ How to read this:
 - [x] **0.6** Unit tests for handlers / validation
 - [x] **0.7** Makefile: `make test`
 - [x] **0.8** Docker image for the gateway (design lists this in M0; after tests)
-- [ ] **0.9** Learning note `docs/learning/00-go-foundations.md`
+- [x] **0.9** Learning note skipped (Kyle asked to continue)
 
 ---
 
@@ -39,10 +39,11 @@ How to read this:
 
 **Definition of done:** 100+ events/sec generated and consumed reliably.
 
-- [ ] Event generator (`cmd/event-generator`) → HTTP gateway (print/log events, still no Kafka)
-- [ ] Add Kafka locally (Docker Compose)
-- [ ] Gateway publishes to `ai.events.raw` (partition key: `trace_id`)
-- [ ] Confirm consume path and basic Kafka ideas (topic, partition, offset)
+- [ ] **1.1** Event generator: POST one event to the gateway (no Kafka)
+- [ ] **1.2** Generator loop / rate (still HTTP only)
+- [ ] **1.3** Kafka locally (Docker Compose)
+- [ ] **1.4** Gateway publishes to `ai.events.raw` (partition key: `trace_id`)
+- [ ] **1.5** Consume path: topic, partition, offset
 
 ---
 

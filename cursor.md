@@ -93,19 +93,19 @@ Then:
 
 - Kyle wants a full-project checklist he can scan: `docs/progress.md`.
 - Update that file when a step is verified. Keep “You are here” accurate.
-- Do not mark a step done until it has been run, not only typed.
+- Kyle skipped the Milestone 0 learning note; do not block on learning notes unless he asks.
 
 ## Current progress
 
-- **Current milestone:** 0 — Repository and Go Foundations
-- **Current step:** 0.9 — Milestone 0 learning note
-- **Done:** 0.1–0.8 (including Docker image `ingestion-gateway:0.8`)
-- **Definition of done for Milestone 0:** `make test`, `make run`, `curl localhost:<port>/healthz`
-- We will reach that over several small typing steps, not in one dump.
+- **Current milestone:** 1 — AI Event Ingestion
+- **Current step:** 1.1 — Event generator POSTs one event (HTTP only, no Kafka)
+- **Done:** Milestone 0 (0.1–0.8; 0.9 skipped)
+- **Definition of done for Milestone 1:** 100+ events/sec generated and consumed reliably (Kafka comes later in this milestone)
 
-## Next intended steps (after 0.9 works)
+## Next intended steps (after 1.1 works)
 
-- Milestone 1: event generator → HTTP gateway (still no Kafka at first)
+- 1.2 Generator loop / rate
+- 1.3 Kafka via Docker Compose
 
 ## Go environment
 
